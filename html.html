@@ -389,21 +389,9 @@
     
 
 
-    function redirectAndClose() {
-      window.open('https://khaikarak7.github.io/TheCurveCalculator/html', '_self');
-      window.close(); // cuba tutup tab semasa
-    }
-    function redirectAndClose() {
-      window.open('https://khaikarak7.github.io/BousteadorRateCalculator/security.html', '_self');
-      window.close(); // cuba tutup tab semasa
-    }
-    function redirectAndClose() {
-      window.open('https://khaikarak7.github.io/BousteadorRateCalculator/security.html', '_self');
-      window.close(); // cuba tutup tab semasa
-    }
-    function redirectAndClose() {
-      window.open('https://khaikarak7.github.io/BousteadorRateCalculator/security.html', '_self');
-      window.close(); // cuba tutup tab semasa
+    function redirectAndClose(url) {
+      window.open(url, '_self'); // Navigate in same tab
+      window.close(); // Try to close the current tab (may not work due to browser restrictions)
     }
     
 
