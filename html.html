@@ -93,110 +93,6 @@ body {
 
 
 
-@media (max-width: 480px) {
-  /* Popup Modal */
-  .popup-modal {
-    width: 47%;
-    height: 50%;
-    max-width: 0%;
-    max-height: 0%;
-    left: 0;
-    top: 0;
-    background-color: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
-    z-index: 1000; /* Ensure it's in front of other content */
-    box-sizing: border-box;
-  }
-
-  /* Popup Content */
-  .popup-content {
-    width: 47%;  /* Make the width smaller */
-    max-width: 47%; /* Set a maximum width */
-    max-height: 47%; /* Set a maximum height */
-    padding-left: 0%;
-    padding-right: 0%;
-    top: 25%;
-    left: 0;
-    transform: translateX(0);
-    border-radius: 5px;
-    margin: 0;
-    padding-bottom: 0;
-
-  }
-
-  /* Adjust image inside popup */
-  .popup-content img {
-    width: 100%;
-    height: auto;
-
-    border-radius: 5px;
-  }
-}
-
-
-
-
-
-
-
-.main-wrapper, .main-wrapper2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; /* Dari center ke kiri */
-  width: 48%; /* Pastikan kedua-dua elemen tak terlalu lebar */
-  padding-left: 20px; /* adjust padding kiri */
-  padding-right: 20px; /* adjust padding kanan */
-  position: relative;
-}
-
-.main-wrapper {
-  width: 100%; /* Lebar penuh di skrin kecil */
-  padding-left: 660px;
-  padding-right: 0;
-}
-
-.main-wrapper2 {
-  width: 100%; /* Lebar penuh di skrin kecil */
-  padding-left: 300px;
-  padding-right: 0;
-}
-
-@media (max-width: 480px) {
-  .main-wrapper {
-    padding-left: 200px;
-    padding-right: 300px;
-    padding-bottom: 50px;
-    position: relative;
-    top: 50px;
-    left: 20px;
-    z-index: 9999;
-  }
-  
-  .main-wrapper2 {
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-bottom: 0px;
-    position: relative;
-  }
-
-  .side-btn, .side-btn2 {
-    padding: 2px 4px;  /* Larger padding */
-    font-size: 1rem;
-    border-radius: 8px;
-    position: relative;   /* Ensure the button stays in normal flow */
-    top: 0px;             /* Keep the button in place vertically */
-    left: 20px;          /* Move the button slightly to the left */
-    display: inline-flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-  }
-}
-
-
-
-
-
-
 .side-buttons {
   display: flex;
   flex-direction: column;
@@ -207,7 +103,7 @@ body {
   left: 0; /* Atas kiri, boleh adjust kemudian */
 }
 
-.side-btn,.side-btn2 {
+.side-btn {
   padding: 12px 18px;
   font-size: 1rem;
   font-weight: bold;
@@ -216,7 +112,7 @@ body {
   border: none;
   border-radius: 10px;
   margin-bottom: 15px;
-  margin-top: 5px;
+  margin-top: 430px;
   cursor: pointer;
   transition: 0.3s;
   z-index: 9999;
@@ -226,89 +122,10 @@ body {
   padding: 12px 18px;
   border-radius: 10px;
   margin-bottom: 15px;
+  margin-top: 430px;
   white-space: nowrap; /* Mengelakkan teks dari wrapping */
   display: inline-block; /* Pastikan ia berada dalam satu baris */
-}
-
-
-.side-btn:hover {
-  background-color: #d4ac0d;
-  color: white;
-}
-
-
-
-
-
-
-.main-wrapper, .main-wrapper2 {
-  display: flex;
-  align-items: flex-start;
-  justify-content: flex-start; /* Dari center ke kiri */
-  width: 48%; /* Pastikan kedua-dua elemen tak terlalu lebar */
-  padding-left: 20px; /* adjust padding kiri */
-  padding-right: 20px; /* adjust padding kanan */
-  position: relative;
-}
-
-.main-wrapper {
-  width: 100%; /* Lebar penuh di skrin kecil */
-  padding-left: 660px;
-  padding-right: 0;
-}
-
-.main-wrapper2 {
-  width: 100%; /* Lebar penuh di skrin kecil */
-  padding-left: 300px;
-  padding-right: 0;
-}
-
-/* Responsif untuk skrin telefon */
-@media (max-width: 768px) {
-  .main-wrapper {
-    padding-left: 400px; /* kurangkan padding kiri */
-    padding-right: 20px; /* kurangkan padding kanan */
-    padding-top: 0px;
-  }
-
-  .main-wrapper2 {
-    padding-left: 20px; /* kurangkan padding kiri */
-    padding-right: 20px; /* kurangkan padding kanan */
-    padding-bottom: 10px;
-  }
-}
-
-
-
-.side-buttons {
-  display: flex;
-  flex-direction: column;
-  margin-right: 200px;
-  align-items: flex-start;
-  position: absolute; /* Supaya boleh letak di mana-mana dalam main-wrapper */
-  top: 0; /* Atas kiri, boleh adjust kemudian */
-  left: 0; /* Atas kiri, boleh adjust kemudian */
-}
-
-.side-btn,.side-btn2 {
-  padding: 12px 18px;
-  font-size: 1rem;
-  font-weight: bold;
-  background-color: #000000;
-  color: #ffffff;
-  border: none;
-  border-radius: 10px;
-  margin-bottom: 15px;
   cursor: pointer;
-  transition: 0.3s;
-}
-
-.side-btn2 {
-  padding: 12px 18px;
-  border-radius: 10px;
-  margin-bottom: 15px;
-  white-space: nowrap; /* Mengelakkan teks dari wrapping */
-  display: inline-block; /* Pastikan ia berada dalam satu baris */
 }
 
 
@@ -316,6 +133,8 @@ body {
   background-color: #d4ac0d;
   color: white;
 }
+
+
 
 
 
@@ -356,6 +175,78 @@ body {
   text-decoration-color: black;
   text-underline-offset: 30px;
 }
+
+
+.side-btn {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 120px;
+  margin-right: -440px;
+  margin-left: 440px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.side-btn2 {
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: -3px;
+  margin-left: -100px;
+  margin-right: 100px;
+  white-space: nowrap; /* Mengelakkan teks dari wrapping */
+  display: inline-block; /* Pastikan ia berada dalam satu baris */
+  cursor: pointer;
+  z-index: 9999;
+}
+
+
+.side-btn:hover {
+  background-color: #d4ac0d;
+  color: white;
+}
+
+@media (max-width: 768px) {
+  .side-btn,
+  .side-btn2 {
+    margin: 20px auto !important;
+    display: block;
+    width: 80%;
+    text-align: center;
+    font-size: 0.8rem;
+    font-weight: bold;
+    position: relative;
+    white-space: nowrap; /* Mengelakkan teks dari wrapping */
+    display: inline-block; /* Pastikan ia berada dalam satu baris */
+    cursor: pointer;
+  }
+
+  .side-btn {
+    margin-top: 430px !important;
+  margin-left: 40px !important;
+  margin-right: -10px !important;
+  
+  }
+
+  .side-btn2 {
+    margin-top: 55px !important;
+    margin-left: 50px !important;
+    margin-right: -20px !important;
+  }
+}
+
+
+
+
+
+
 
  /* Main Container */
  .container {
@@ -465,20 +356,20 @@ button:hover {
 /* Responsiveness */
 @media (max-width: 768px) {
   .container {
-    padding: 20px;
-    width: 90%; /* Adjust for mobile */
+    padding: 18px;
+    width: 89.9%;
   }
 
   h1 {
-    font-size: 1.8rem; /* Adjust heading size */
+    font-size: 1.8rem;
   }
 
   .form-row {
-    flex-direction: column; /* Stack form fields */
+    flex-direction: column;
   }
 
   .form-group {
-    margin: 0 0 20px 0; /* Adjust spacing */
+    margin: 0 0 20px 0;
   }
 
   input, button {
@@ -492,15 +383,15 @@ button:hover {
   }
 
   .top-buttons {
-    position: relative; /* Reset any fixed positioning */
-    margin-top: 20px; /* Move buttons down */
+    margin-top: 20px;
   }
 
   .top-btn {
-    width: 100%; /* Full width buttons */
+    width: 100%;
     font-size: 1rem;
   }
 }
+
 
   </style>
   
