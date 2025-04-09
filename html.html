@@ -62,8 +62,8 @@ body {
   padding: 10px;
   padding-left: 3%;
   padding-right: 34px;
-  left: -8px;
-  top: -5px;
+  left: -0px;
+  top: -0px;
   border-radius: 20px;
   width: 80%;  /* Increased width of the popup */
   max-width: 700px;  /* Increased max-width */
@@ -101,21 +101,23 @@ body {
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
-    z-index: 9999;
+    position: fixed;  /* Make the modal fixed to prevent scrolling */
+    z-index: 1000; /* Ensure it's in front of other content */
   }
 
   /* Popup Content */
   .popup-content {
     width: 80%;  /* Smaller width for mobile */
     max-width: 600px; /* Limit max width */
-    padding-left: 10%;  /* Adjust padding for mobile */
-    padding-right: 10%; /* Adjust padding for mobile */
-    top: 5%;            /* Adjust top position */
+    padding-left: 5%;  /* Adjust padding for mobile */
+    padding-right: 5%; /* Adjust padding for mobile */
+    top: 10%;            /* Adjust top position */
     left: 50%;           /* Center the popup horizontally */
     transform: translateX(-50%); /* Center the popup horizontally */
     border-radius: 15px; /* Optional rounded corners */
     margin: 0;         /* Remove margin for mobile */
-    padding-bottom: 20px;
+    padding-bottom: 0; /* Remove unnecessary bottom padding */
+    position: fixed;  /* Keep the popup fixed */
   }
 
   /* Adjust image inside popup */
@@ -126,6 +128,7 @@ body {
     border-radius: 15px;  /* Optional rounded corners on image */
   }
 }
+
 
 
 
@@ -169,7 +172,7 @@ body {
     position: relative;
   }
 
-  .side-btn2 {
+  .side-btn,.side-btn2 {
     padding: 24px 30px;  /* Padding lebih besar */
     font-size: 1rem;
     border-radius: 8px;
