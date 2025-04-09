@@ -171,13 +171,14 @@ body {
 
   /* Popup Content */
   .popup-content {
-    width: 70%;  /* Make the width smaller */
-    max-width: 300px; /* Set a smaller max width */
+    width: 100%;  /* Full width */
+    max-width: 300px; /* Set a maximum width for the popup */
+    min-width: 200px; /* Set a minimum width to prevent it from becoming too small */
     padding-left: 5%;  /* Adjust padding for mobile */
     padding-right: 5%; /* Adjust padding for mobile */
     top: 25%;            /* Adjust top position for better spacing */
-    left: 10%;           /* Move the popup towards the left */
-    transform: translateX(0); /* Remove horizontal centering */
+    left: 0;             /* Align the popup to the left */
+    transform: translateX(0); /* No horizontal centering */
     border-radius: 5px; /* Smaller rounded corners */
     margin: 0;         /* Remove margin for mobile */
     padding-bottom: 0; /* Remove unnecessary bottom padding */
