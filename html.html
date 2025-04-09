@@ -21,6 +21,301 @@ body {
   flex-direction: column; /* Ensures content is stacked vertically */
 }
 
+.main-wrapper2 {
+  position: relative;
+  padding: 50px;
+}
+
+.side-btn2 {
+  padding: 4px 8px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 6px;
+  margin-top: 40px; /* tambah margin atas */
+  margin-bottom: 15px;
+  white-space: nowrap;
+  display: inline-block;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+
+
+/* Popup Style */
+.popup-modal {
+  display: none;
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.708);
+}
+
+.popup-content {
+  background-color: #1E3A8A;
+  margin: 10% auto;
+  padding: 10px;
+  padding-left: 3%;
+  padding-right: 34px;
+  left: -8px;
+  top: -5px;
+  border-radius: 20px;
+  width: 80%;  /* Increased width of the popup */
+  max-width: 700px;  /* Increased max-width */
+  position: relative;
+}
+
+/* Adjust image inside popup */
+.popup-content img {
+  width: 100%;  /* Make the image take up the full width of the popup */
+  height: auto;  /* Ensure the image maintains its aspect ratio */
+  object-fit: contain;  /* Ensure the image maintains its aspect ratio */
+  border-radius: 15px;  /* Apply rounded corners to the image */
+}
+
+
+
+
+
+.close-btn {
+  position: absolute;
+  right: 15px;
+  top: 3px;
+  font-size: 28px;
+  color: #ffffff;
+  cursor: pointer;
+}
+
+
+
+@media (max-width: 768px) {
+  /* Popup Modal */
+  .popup-modal {
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
+    z-index: 9999;
+  }
+
+  /* Popup Content */
+  .popup-content {
+    width: 80%;  /* Smaller width for mobile */
+    max-width: 600px; /* Limit max width */
+    padding-left: 10%;  /* Adjust padding for mobile */
+    padding-right: 10%; /* Adjust padding for mobile */
+    top: 5%;            /* Adjust top position */
+    left: 50%;           /* Center the popup horizontally */
+    transform: translateX(-50%); /* Center the popup horizontally */
+    border-radius: 15px; /* Optional rounded corners */
+    margin: 0;         /* Remove margin for mobile */
+    padding-bottom: 20px;
+  }
+
+  /* Adjust image inside popup */
+  .popup-content img {
+    width: 100%;  /* Ensure the image takes the full width */
+    height: auto; /* Maintain aspect ratio */
+    object-fit: contain;  /* Ensure the image fits correctly */
+    border-radius: 15px;  /* Optional rounded corners on image */
+  }
+}
+
+
+
+.main-wrapper, .main-wrapper2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Dari center ke kiri */
+  width: 48%; /* Pastikan kedua-dua elemen tak terlalu lebar */
+  padding-left: 20px; /* adjust padding kiri */
+  padding-right: 20px; /* adjust padding kanan */
+  position: relative;
+}
+
+.main-wrapper {
+  width: 100%; /* Lebar penuh di skrin kecil */
+  padding-left: 660px;
+  padding-right: 0;
+}
+
+.main-wrapper2 {
+  width: 100%; /* Lebar penuh di skrin kecil */
+  padding-left: 300px;
+  padding-right: 0;
+}
+
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding-left: 200px;
+    padding-right: 300px;
+    padding-bottom: 50px;
+    position: relative;
+    top: 50px;
+    left: 20px;
+    z-index: 9999;
+  }
+  
+  .main-wrapper2 {
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
+    position: relative;
+  }
+
+  .side-btn2 {
+    padding: 24px 30px;  /* Padding lebih besar */
+    font-size: 1rem;
+    border-radius: 8px;
+    position: relative;   /* Ensure the button is in normal flow */
+    top: -0px;           /* Move the button upwards by 90px */
+    left: -30px;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+  }
+
+
+}
+
+
+
+
+
+.side-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  align-items: flex-start;
+  position: absolute; /* Supaya boleh letak di mana-mana dalam main-wrapper */
+  top: 0; /* Atas kiri, boleh adjust kemudian */
+  left: 0; /* Atas kiri, boleh adjust kemudian */
+}
+
+.side-btn,.side-btn2 {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  margin-top: 5px;
+  cursor: pointer;
+  transition: 0.3s;
+  z-index: 9999;
+}
+
+.side-btn2 {
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  white-space: nowrap; /* Mengelakkan teks dari wrapping */
+  display: inline-block; /* Pastikan ia berada dalam satu baris */
+}
+
+
+.side-btn:hover {
+  background-color: #d4ac0d;
+  color: white;
+}
+
+
+
+
+
+
+.main-wrapper, .main-wrapper2 {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start; /* Dari center ke kiri */
+  width: 48%; /* Pastikan kedua-dua elemen tak terlalu lebar */
+  padding-left: 20px; /* adjust padding kiri */
+  padding-right: 20px; /* adjust padding kanan */
+  position: relative;
+}
+
+.main-wrapper {
+  width: 100%; /* Lebar penuh di skrin kecil */
+  padding-left: 660px;
+  padding-right: 0;
+}
+
+.main-wrapper2 {
+  width: 100%; /* Lebar penuh di skrin kecil */
+  padding-left: 300px;
+  padding-right: 0;
+}
+
+/* Responsif untuk skrin telefon */
+@media (max-width: 768px) {
+  .main-wrapper {
+    padding-left: 400px; /* kurangkan padding kiri */
+    padding-right: 20px; /* kurangkan padding kanan */
+    padding-top: 0px;
+  }
+
+  .main-wrapper2 {
+    padding-left: 20px; /* kurangkan padding kiri */
+    padding-right: 20px; /* kurangkan padding kanan */
+    padding-bottom: 10px;
+  }
+}
+
+
+
+.side-buttons {
+  display: flex;
+  flex-direction: column;
+  margin-right: 200px;
+  align-items: flex-start;
+  position: absolute; /* Supaya boleh letak di mana-mana dalam main-wrapper */
+  top: 0; /* Atas kiri, boleh adjust kemudian */
+  left: 0; /* Atas kiri, boleh adjust kemudian */
+}
+
+.side-btn,.side-btn2 {
+  padding: 12px 18px;
+  font-size: 1rem;
+  font-weight: bold;
+  background-color: #000000;
+  color: #ffffff;
+  border: none;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.side-btn2 {
+  padding: 12px 18px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+  white-space: nowrap; /* Mengelakkan teks dari wrapping */
+  display: inline-block; /* Pastikan ia berada dalam satu baris */
+}
+
+
+.side-btn:hover {
+  background-color: #d4ac0d;
+  color: white;
+}
+
+
+
+
+
+
+
+
 /* Top Buttons */
 .top-buttons {
   display: flex;
@@ -66,7 +361,7 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  margin-top: 1%; /* Adjust for top button space */
+  margin-top: -5%; /* Adjust for top button space */
 }
 
 /* Heading */
@@ -212,7 +507,36 @@ button:hover {
 
 
     </div>
-  
+    <div class="custom-layout">
+      <div class="main-wrapper">
+        <div class="side-buttons">
+          <button class="side-btn">Season Plan</button>
+          
+        </div>
+        <!-- Content lain -->
+      </div>
+    </div>
+    <div class="custom-layout">
+      <div class="main-wrapper2">
+        <div class="side-buttons">
+          <button class="side-btn2" id="openPopup">Parking Rate</button>
+        </div>
+      </div>
+    </div>
+    
+    <!-- Popup Modal -->
+    <div id="popupModal" class="popup-modal">
+      <div class="popup-content">
+        <span class="close-btn">&times;</span>
+        <img src="TheLPRParkingrates.png" alt="Parking Rate" style="max-width: 100%;">
+      </div>
+    </div>
+
+
+
+
+
+
     <div class="container">
       <h1>The Curve Calculator</h1>
   
@@ -408,6 +732,30 @@ button:hover {
     }
     
     let newTab = window.open("redirect.html", "_blank");
+
+
+
+
+
+
+    const popup = document.getElementById('popupModal');
+    const openBtn = document.getElementById('openPopup');
+    const closeBtn = document.querySelector('.close-btn');
+
+    openBtn.addEventListener('click', () => {
+      popup.style.display = 'block';
+    });
+
+    closeBtn.addEventListener('click', () => {
+      popup.style.display = 'none';
+    });
+
+    window.addEventListener('click', (e) => {
+      if (e.target === popup) {
+        popup.style.display = 'none';
+      }
+    });
+
 
 
   </script>
