@@ -96,106 +96,22 @@ body {
 @media (max-width: 480px) {
   /* Popup Modal */
   .popup-modal {
-    width: 45%;
+    width: 47%;
     height: 50%;
     max-width: 0%;
     max-height: 0%;
     left: 0;
     top: 0;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
-    position: fixed;  /* Make the modal fixed to prevent scrolling */
     z-index: 1000; /* Ensure it's in front of other content */
-    overflow: hidden; /* Prevent scrolling of the modal */
     box-sizing: border-box;
   }
 
-    body {
-      margin: 0;
-      font-family: Arial, sans-serif;
-      background: linear-gradient(to bottom right, #003300, #006600);
-      color: white;
-    }
-
-    .main-container {
-      max-width: 100%;
-      padding: 20px 15px;
-    }
-
-    .location-list {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      gap: 12px;
-      margin-bottom: 30px;
-      font-weight: bold;
-      font-size: 1.3rem;
-    }
-
-    .tab-container {
-      display: flex;
-      justify-content: center;
-      gap: 10px;
-      flex-wrap: wrap;
-      margin-bottom: 20px;
-    }
-
-    .tab-button {
-      flex: 1;
-      min-width: 140px;
-      background-color: #00c300;
-      border: none;
-      padding: 12px;
-      color: white;
-      border-radius: 8px;
-      font-weight: bold;
-      font-size: 1rem;
-      cursor: pointer;
-    }
-
-    .calculator-box {
-      background-color: #111;
-      padding: 20px;
-      border-radius: 15px;
-      max-width: 400px;
-      margin: auto;
-    }
-
-    .calculator-box h2 {
-      text-align: center;
-      color: #00ff77;
-      font-size: 1.4rem;
-      margin-bottom: 15px;
-    }
-
-    .calculator-box input {
-      width: 100%;
-      margin: 10px 0;
-      padding: 12px;
-      font-size: 1rem;
-      border-radius: 8px;
-      border: none;
-    }
-
-    .calculator-box button {
-      width: 100%;
-      padding: 12px;
-      margin-top: 15px;
-      background-color: #00c300;
-      color: white;
-      border: none;
-      font-weight: bold;
-      font-size: 1rem;
-      border-radius: 8px;
-      cursor: pointer;
-    }
-
-
-
   /* Popup Content */
   .popup-content {
-    width: 45%;  /* Make the width smaller */
-    max-width: 40%; /* Set a maximum width */
-    max-height: 40%; /* Set a maximum height */
+    width: 47%;  /* Make the width smaller */
+    max-width: 47%; /* Set a maximum width */
+    max-height: 47%; /* Set a maximum height */
     padding-left: 0%;
     padding-right: 0%;
     top: 25%;
@@ -204,16 +120,14 @@ body {
     border-radius: 5px;
     margin: 0;
     padding-bottom: 0;
-    position: fixed;
-    overflow: hidden;
-    box-sizing: border-box;
+
   }
 
   /* Adjust image inside popup */
   .popup-content img {
     width: 100%;
     height: auto;
-    object-fit: contain;
+
     border-radius: 5px;
   }
 }
