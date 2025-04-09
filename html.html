@@ -159,47 +159,36 @@ body {
 }
 
 @media (max-width: 768px) {
-  /* Main Wrapper */
   .main-wrapper {
-    padding-left: 20px;  /* Reduce left padding for better spacing */
-    padding-right: 20px; /* Reduce right padding for symmetry */
-    padding-bottom: 20px; /* Set a balanced bottom padding */
+    padding-left: 200px;
+    padding-right: 300px;
+    padding-bottom: 50px;
     position: relative;
-    top: 20px;  /* Slightly reduce top offset */
-    left: 0;    /* Center horizontally */
-    right: 0;   /* Ensure it stays centered */
-    margin: 0 auto; /* Ensure it's centered using auto margin */
+    top: 50px;
+    left: 20px;
     z-index: 9999;
-    width: 100%; /* Make sure the width is 100% for mobile view */
   }
-
-  /* Main Wrapper 2 */
+  
   .main-wrapper2 {
-    padding-left: 20px;  /* Adjust left padding for mobile */
-    padding-right: 20px; /* Adjust right padding for mobile */
-    padding-bottom: 10px; /* Adjust bottom padding for balance */
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 0px;
     position: relative;
-    width: 100%;  /* Full width for better mobile display */
   }
 
-  /* Side Buttons */
   .side-btn, .side-btn2 {
-    padding: 10px 15px;  /* Increase padding for better interaction */
-    font-size: 1rem;     /* Maintain consistent font size */
-    border-radius: 8px;  /* Rounded corners for a cleaner look */
-    position: relative;  /* Ensure the button stays in normal flow */
-    margin: 10px 0;      /* Add some margin for spacing between buttons */
-    left: 50%;           /* Center buttons horizontally */
-    transform: translateX(-50%); /* Ensure buttons are centered */
+    padding: 2px 4px;  /* Larger padding */
+    font-size: 1rem;
+    border-radius: 8px;
+    position: relative;   /* Ensure the button stays in normal flow */
+    top: 0px;             /* Keep the button in place vertically */
+    left: 20px;          /* Move the button slightly to the left */
     display: inline-flex;
     justify-content: center;
     align-items: center;
     z-index: 9999;
-    background-color: #007bff; /* Add background color for visibility */
-    color: white;          /* Set text color to white for contrast */
   }
 }
-
 
 
 
