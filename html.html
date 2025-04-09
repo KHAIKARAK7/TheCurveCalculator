@@ -66,7 +66,7 @@ body {
   top: 5px;
   border-radius: 20px;
   width: 80%;  /* Increased width of the popup */
-  max-width: 100%;  /* Increased max-width */
+  max-width: 700px;  /* Increased max-width */
   position: relative;
 }
 
@@ -96,45 +96,46 @@ body {
 @media (max-width: 480px) {
   /* Popup Modal */
   .popup-modal {
-    width: 45%;
+    width: 48%;
     height: 50%;
+    max-width: 50%;
+    max-height: 50%;
     left: 0;
-    top: 0;
+    top: 50;
     background-color: rgba(0, 0, 0, 0.5); /* Adjust background opacity */
     position: fixed;  /* Make the modal fixed to prevent scrolling */
     z-index: 1000; /* Ensure it's in front of other content */
     overflow: hidden; /* Prevent scrolling of the modal */
-  }
-
-  .popup-content img {
-    max-width: 100%;
+    box-sizing: border-box;
   }
 
   /* Popup Content */
   .popup-content {
-    width: 45%;  /* Make the width smaller */
-    max-width: 45%; /* Set a smaller max width */
-    padding-left: 0%;  /* Adjust padding for mobile */
-    padding-right: 0%; /* Adjust padding for mobile */
-    top: 25%;            /* Adjust top position for better spacing */
-    left: 0;             /* Align the popup to the left */
-    transform: translateX(0); /* No horizontal centering */
-    border-radius: 5px; /* Smaller rounded corners */
-    margin: 0;         /* Remove margin for mobile */
-    padding-bottom: 0; /* Remove unnecessary bottom padding */
-    position: fixed;  /* Keep the popup fixed */
-    overflow: hidden; /* Prevent content overflow and scrolling */
+    width: 48%;  /* Make the width smaller */
+    max-width: 720px; /* Set a maximum width */
+    max-height: 1612px; /* Set a maximum height */
+    padding-left: 0%;
+    padding-right: 0%;
+    top: 25%;
+    left: 0;
+    transform: translateX(0);
+    border-radius: 5px;
+    margin: 0;
+    padding-bottom: 0;
+    position: fixed;
+    overflow: hidden;
     box-sizing: border-box;
   }
 
   /* Adjust image inside popup */
   .popup-content img {
-    width: 100%;  /* Ensure the image takes the full width */
-    height: auto; /* Maintain aspect ratio */
-    object-fit: contain;  /* Ensure the image fits correctly */
-    border-radius: 5px;  /* Optional smaller rounded corners on image */
+    width: 100%;
+    height: auto;
+    object-fit: contain;
+    border-radius: 5px;
   }
 }
+
 
 
 
