@@ -70,7 +70,6 @@ body {
   width: 80%;  /* Increased width of the popup */
   max-width: 700px;  /* Increased max-width */
   position: relative;
-  margin-right: 363px;
 }
 
 /* Adjust image inside popup */
@@ -80,9 +79,7 @@ body {
   object-fit: contain;  /* Ensure the image maintains its aspect ratio */
   border-radius: 15px;  /* Apply rounded corners to the image */
   margin-top: -283px;
-  
 }
-
 @media only screen and (max-width: 768px) {
   .popup-content {
     display: flex;
@@ -96,10 +93,6 @@ body {
     border-radius: 0;
   }
 
-  .popup-content > *:not(img) {
-    display: none; /* Sembunyikan semua kecuali img */
-  }
-
   .popup-content img {
     width: auto;
     max-width: 100%;
@@ -109,8 +102,22 @@ body {
     display: block;
     margin: auto;
   }
-}
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    background: rgba(0,0,0,0.6);
+    color: white;
+    font-size: 24px;
+    border: none;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    z-index: 1000;
+  }
 
+}
 
 
 
