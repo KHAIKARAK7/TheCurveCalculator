@@ -54,6 +54,8 @@ body {
   width: 100%;
   height: 100%;
   background-color: rgba(0, 0, 0, 0.708);
+  overflow-x: auto;
+  z-index: 9999;
 }
 
 .popup-content {
@@ -68,6 +70,7 @@ body {
   width: 80%;  /* Increased width of the popup */
   max-width: 700px;  /* Increased max-width */
   position: relative;
+  margin-right: 363px;
 }
 
 /* Adjust image inside popup */
@@ -76,8 +79,38 @@ body {
   height: auto;  /* Ensure the image maintains its aspect ratio */
   object-fit: contain;  /* Ensure the image maintains its aspect ratio */
   border-radius: 15px;  /* Apply rounded corners to the image */
+  margin-top: -283px;
+  
 }
 
+@media only screen and (max-width: 768px) {
+  .popup-content {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: none;
+    border-radius: 0;
+    box-shadow: none;
+    margin-top: -153px;
+  }
+
+  .popup-content img {
+    margin-top: 0;
+    border-radius: 0;
+    width: 100vw;
+    height: auto;
+    object-fit: contain;
+  }
+
+  .close-btn {
+    top: 5px;
+    right: 50%;
+    transform: translateX(50%);
+    font-size: 24px;
+    color: white;
+  }
+}
 
 
 
@@ -115,7 +148,7 @@ body {
   margin-top: 430px;
   cursor: pointer;
   transition: 0.3s;
-  z-index: 9999;
+  z-index: 1;
 }
 
 .side-btn2 {
@@ -427,7 +460,7 @@ button:hover {
     <div id="popupModal" class="popup-modal">
       <div class="popup-content">
         <span class="close-btn">&times;</span>
-        <img src="TheLPRParkingrates.png" alt="Parking Rate">
+        <img src="TheLPRParkingrate.png" alt="Parking Rate">
       </div>
     </div>
 
