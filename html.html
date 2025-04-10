@@ -85,32 +85,32 @@ body {
 
 @media only screen and (max-width: 768px) {
   .popup-content {
-    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
     padding: 0;
     margin: 0;
-    width: 100%;
-    max-width: none;
+    width: 100vw;
+    height: 100vh;
     border-radius: 0;
-    box-shadow: none;
-    margin-top: -153px;
+  }
+
+  .popup-content > *:not(img) {
+    display: none; /* Sembunyikan semua kecuali img */
   }
 
   .popup-content img {
-    margin-top: 0;
-    border-radius: 0;
-    width: 100vw;
+    width: auto;
+    max-width: 100%;
     height: auto;
+    max-height: 100%;
     object-fit: contain;
-  }
-
-  .close-btn {
-    top: 5px;
-    right: 50%;
-    transform: translateX(50%);
-    font-size: 24px;
-    color: white;
+    display: block;
+    margin: auto;
   }
 }
+
 
 
 
